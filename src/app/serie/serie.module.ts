@@ -13,7 +13,7 @@ import { SeriePage } from './serie.page';
     CommonModule,
     FormsModule,
     IonicModule,
-    SeriePageRoutingModule
+    SeriePageRoutingModule,
   ],
   declarations: [SeriePage]
 })
