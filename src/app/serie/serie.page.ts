@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';  // ✅ Importação corrigida
 
 @Component({
   selector: 'app-serie',
@@ -7,10 +8,12 @@ import { Component, OnInit } from '@angular/core';
   standalone: false
 })
 export class SeriePage implements OnInit {
+  filme: any;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private router: Router) {
+    const nav = this.router.getCurrentNavigation();
+    this.filme = nav?.extras?.state?.['dados'];
   }
 
+  ngOnInit() {}
 }

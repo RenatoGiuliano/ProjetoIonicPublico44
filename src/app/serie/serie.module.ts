@@ -7,6 +7,7 @@ import { IonicModule } from '@ionic/angular';
 import { SeriePageRoutingModule } from './serie-routing.module';
 
 import { SeriePage } from './serie.page';
+// import { RatingStarsPipe } from '../pipes/rating-stars.pipe'; // Remova essa linha
 
 @NgModule({
   imports: [
@@ -15,6 +16,6 @@ import { SeriePage } from './serie.page';
     IonicModule,
     SeriePageRoutingModule,
   ],
-  declarations: [SeriePage]
+  declarations: [SeriePage]  // Remova RatingStarsPipe daqui
 })
 export class SeriePageModule {}
